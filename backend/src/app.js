@@ -27,5 +27,4 @@ app.use("/api/auth", authRoutes);
 app.use("/api/resume", resumeRoutes);
 
 app.use("/api/ai", aiRoutes);
-// Error handling middleware
 module.exports = app;
