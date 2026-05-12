@@ -18,6 +18,10 @@ app.use(cors());
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("HireIt API Running");
+});
+
 app.use("/api/auth", authRoutes);
 
 app.use("/api/resume", resumeRoutes);
